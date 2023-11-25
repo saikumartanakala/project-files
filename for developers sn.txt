@@ -1,0 +1,81 @@
+26. What is LDAP Integration and its use?
+Ans: LDAP is the Lightweight Directory Access Protocol. It is used for user data population and User authentication. Servicenow integrates with LDAP directory to streamline the user login process and to automate the creation of user and assigning them roles
+
+27. How to set a field unique on the table?
+Ans: Go to that respective field dictionary and set the unique check box to true.
+
+28. What is the data dictionary?
+Ans: The data dictionary defines every table and field in the system. It contains information about a field’s data type, default value, dependency, and other attributes.
+
+Related Article: What is ServiceNow - A Complete Guide
+29. What happens when a user makes some changes to the homepage?
+Ans: When a user makes some changes on the homepage then that page is saved as his personalized homepage instead of updation on the actual homepage. For example, the home page name is Incident overview. When a user makes some changes to it then this page is saved as My incident overview and is only visible to that user.
+
+30. What role you are required to create/update ACL?
+Ans: security_admin
+
+31. How you can check which ServiceNow instance node you are working on?
+Ans: Goto SystemDiagnostic -> Stats. The statistic page will be open where you can get the details of the node and the instance on which you are working on
+
+32. How to enable or disable the pie chart labels
+Ans: To enable or disable the labels in the pie chart we need to set the property glide.ui.chart.pie.labels to true or false.
+
+33. What is an installation exit?
+Ans: Installation exits are customizations that exit from Java to call a script before returning back to Java. Navigate to System Definition > Installation Exits. Some installation exit names (Login, Logout, ValidatePassword, ExternalAuthentication) are reserved and cannot be changed. Other installation exits can override these with a custom script that replaces the script in the default installation exit.
+
+34. What is an import set?
+Ans: Import Sets is a tool used to import data from various data sources and, then using transform map, a map that data into ServiceNow tables. The Import Sets table acts as a staging table for records imported.
+
+35. What is a transform Map?
+Ans: A transform map transforms the record imported into the ServiceNow import set table to the target table. It also determines the relationships between fields displaying in an Import Set table and fields in the target table
+
+36. What do you mean by Foreign record insert?
+Ans: A foreign record insert occurs when an import makes a change to a table that is not the target table for that import. This happens when updating a reference field on a table.
+
+37. Which searching technique is used to search a text or record in ServiceNow?
+Ans: Zing is the text indexing and search engine that performs all text searches in ServiceNow.
+
+38. What does the Client Transaction Timings plugin do?
+Ans: The Client Transaction Timings plugin enhances the system logs by providing more information on the duration of transactions between the client and the server. By providing information on how time was spent during the transaction, performance issues can be tracked down to the source by seeing where the time is being consumed.
+
+39. What is an inactivity monitor?
+Ans: An inactivity monitor triggers an event for a task record if the task has been inactive for a certain period of time. If the task remains inactive, the monitor repeats at regular intervals.
+
+40. What is domain separation?
+Ans: Domain separation is a way to separate data into (and optionally to separate administration by) logically-defined domains. For example, A client XYZ have two business and they are using ServiceNow single instance for both businesses. They do not want that user’s from one business can see the data from other businesses. Here we can configure domain separation to isolate the records from both businesses.
+
+Leave an Inquiry to learn about: ServiceNow Online Training in Bangalore
+
+41. How you can remove the Remember me check box from the login page?
+Ans: You can set the property – “glide.ui.forgetme” to true to remove the Remember me check box from the login page.
+
+42. What is HTML Sanitizer?
+Ans: The HTML sanitizer automatically cleans up HTML markup in HTML fields to remove unwanted code and protect against security concerns such as cross-site scripting attacks. The HTML sanitizer is active for all instances starting with the Eureka release.
+
+43. Which table is used in ServiceNow to audit changes to records?
+Ans: ServiceNow uses the Sys Audit [sys_audit] table to audit changes to records.
+
+44. What is the Schema map?
+Ans: The schema map displays the details of tables and their relationships in a visual manner, allowing administrators to view and easily access different parts of the database schema.
+
+45. What is a dashboard?
+Ans: The dashboard is a visual collection of reports and paralytics presented as KPI scorecards and indicator summary tab.
+
+46. What is the scorecard?
+Ans: A scorecard can be used to measure the performance of an employee or a business process. It is a graphical representation of progress over time. A scorecard belongs to an indicator. The first step is to define the indicators that you want to measure. Scorecards can be enhanced by adding targets, breakdowns (scores per group), aggregates (counts, sums, and maximums), and time series (totals and averages).
+
+47. What do you mean by indicators in performance analytics in ServiceNow?
+Ans: Indicators, also known as metrics, business metrics, or KPIs, are statistics that businesses track to measure current conditions and to forecast business trends.
+
+48. How to set the default value of a date field to the current date-time value?
+Ans: Goto the dictionary of the respective date-time field and set the default value as javascript: gs.now DateTime;
+
+49. What is client transaction timing?
+Ans: Client transaction timing provides more information on the duration of transactions between the client and the server. This requires activating the plugin – “Client transaction timing plugin”.
+
+50. What is the set workflow(e) function does?
+Ans: set workflow(e) enables or disables the running of business rules that might normally be triggered by subsequent actions. If the e parameter is set to false, an insert/update will not be audited. Auditing only happens when the parameter is set to true for a GlideRecord operation.
+Parameters:
+e – A boolean variable that if true (default) enables business rules, and if false to disables them.
+
+Related Article: Learn ServiceNow Workflow

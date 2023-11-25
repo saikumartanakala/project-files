@@ -1,0 +1,98 @@
+51. What the setForceUpdate() function does?
+Ans: setForceUpdate() updates the record even if there are no changes on the record.
+
+52. What is the significance of the set limit(n) function?
+Ans: set limit(n) functions to limit the number of records to query by Gliderecord().
+
+53. Can you update a record without updating its system fields(like sys_updated_by, sys_updated_on)?
+Ans: Yes, you can do it by using a function autoSysFields() in your server-side scripting. Whenever you are updating a record set the autoSysFields() to false.
+example:
+
+var gr = new GlideRecord(‘incident’);
+gr.query();
+if(gr.next()){
+gr.autoSysFields(false);
+short_description = “Test from Examsmyntra” ;
+gr.update();
+}
+54. How to get the row count in a glide record?
+Ans: By using the getRowCount() function you can retrieve the number of rows.
+
+55. What is the difference between deleteMultiple() and deleteRecord()?
+Ans: delete multiple() deletes multiple records according to the current “where” clause. Do not delete attachments, whereas delete record() deletes the single record.
+
+56. How to restrict users to upload an attachment in ServiceNow?
+Ans:Following is the stepwise step process:
+Navigate to System Properties > Security.
+In the Attachment limits and behavior section, locate the List of roles (comma-separated) that can create attachments: property (glide.attachment.role).
+Enter one or more roles separated by commas.
+Only roles listed in this property are able to upload attachments to a record. If no roles are entered, then all roles can upload attachments to ServiceNow forms.
+Click Save.
+
+57. How to disable attachments on a specific ServiceNow table?
+Ans: Go to the dictionary of that table and add “Add no_attachment” to the Attributes field.
+
+58. What is the significance of the cascade variable checkbox in the order guide?
+Ans: Checkbox to select whether the variables used should cascade, which passes their values to the ordered items. If this checkbox is cleared, variable information entered in the order guide is not passed on to ordered items.
+
+59. What are Gauges?
+Ans: A gauge can be based on a report and can be put on a homepage or a content page.
+
+60. What do you mean by Metrics in ServiceNow?
+Ans: Metrics record and measure the workflow of individual records. With metrics, customers can arm their process by providing tangible figures to measure, for example, how long it takes before a ticket is reassigned or changes state.
+
+61. How many types of searches are available in ServiceNow?
+Ans: Use any of the following searches to find information in ServiceNow:
+
+Lists: find records in a list:
+
+Global text search: find records in multiple tables from a single search field.
+Knowledge base: find knowledge articles.
+Navigation filter: filter the items in the application navigator.
+Search screens use a form­like interface to search for records in a table. Administrators can create these custom modules.
+62. Which roles are used by Knowledge management?
+Ans: Knowledge management uses these roles knowledge, knowledge_admin, and admin role.
+
+63. How to create your own report?
+Ans: Navigate to Reports > Create New. In releases prior to Eureka, navigate to Reports > View / Run and then click New.
+
+64. How to activate the reporting engine?
+Ans: Make the glide. report.use_charting_v2 system property to true.
+
+65. Name a few types of reports that you can generate?
+Ans: Few reports are:
+
+List
+Bar
+Pivot
+Pie
+Calendar
+66. How to control the script conditions of Access Control Rules apply to a table’s reference fields?
+Ans: You can Add glide.sys_reference_row_check to the System properties and set it to true.
+
+67. How to create an Inbound Email Action?
+Ans: Navigate to System Policy > Email > Inbound Actions and Click New.
+
+68. How does ServiceNow recognize Inbound Emails?
+Ans: Via Watermark or In­Reply­To email header. If These are not present, ServiceNow recognizes an email containing a prefix in the subject line.
+
+69. How to enable automatic user creation from email?
+Ans: Set the property glide.pop3readerjob.create_caller to true in system properties.
+
+70. How do allow locked-out users to trigger inbound email actions?
+Ans: By adding the system property glide.pop3.process_locked_out to true.
+
+Refer for more information: https://wiki.servicenow.com/index.php?title=Inbound_Email_Actions
+
+Explore ServiceNow Sample Resumes Download & Edit, Get Noticed by Top Employers! 
+71. Which role is required to create and access the baseline?
+Ans: role is required to create and access baselines.
+
+72. How to change the recipient limit in the email notifications?
+Ans: By setting the system property glide.email.smtp.max_recipients.
+
+73. What is the difference between ${URI} and ${URI_REF}?
+Ans: ${URI} shows the word LINK whereas ${URI_REF} shows the display value of the record as the link text.
+
+74. How to hide watermark globally?
+Ans: Create a new property named glide.email.watermark.visible and set it to false.

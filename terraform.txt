@@ -1,0 +1,9 @@
+terraform
+
+
+Access key
+AKIA6BJJTXSRBHFOG46Q
+
+Secret access key
+
+t7uplAhBFBel29woLfHx8Dx3KmFAZ10etAu8CYq8

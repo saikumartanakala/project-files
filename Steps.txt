@@ -1,0 +1,9 @@
+C:\Program Files\Apache Software Foundation\Tomcat 8.0\bin
+tomcat8
+
+Chrome
+http://localhost:2020/
+Manager App
+admin
+admin
+

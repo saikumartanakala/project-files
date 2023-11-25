@@ -1,0 +1,12 @@
+1.what is devops ?
+A: devops is a process of improving the application        delivery
+♠automation
+♠quality
+♠continuous monitoring
+♠continuous testing 
+by ansuring there is proper automation with a code quality or application quality that is maintained with cm and ct
+2. why devops ?
+A:  
+
+
+A: i just started working as a devops engineer and i was passonate about learning devops
